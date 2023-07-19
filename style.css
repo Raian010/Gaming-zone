@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Work+Sans:wght@400;600;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.pink{
+    color: #FF42A5;
+}
+.right{
+    margin-right: 5px;
+}
+.follow{
+    border-radius: 8px;
+    background-color: rgba(11, 2, 35, 0.10);
+    padding: 10px 15px;
+}
+.bottom{
+    margin-bottom: 14px;
+}
+.top{
+    margin-top: 30px;
+}
+.btn-primary{
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 40px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+}
+.btn-secondary{
+    background-color: #4EC5F7;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 40px;
+}
+.linear{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+/* Header style starts here */
+
+/* Nav style starts here */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 37px 100px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-logo img{
+    width: 70px;
+    height: 30px;
+}
+.nav-heading{
+    font-size: 35px;
+    font-weight: 700;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    text-decoration: none;
+}
+nav li{
+    list-style: none;
+    margin-right: 32px;
+}
+
+/* Nav styles ends here */
+
+/* Main styles starts here */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* banner styles */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 150px;
+}
+.banner-img img{
+    width: 80%;
+}
+.banner-details h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.banner-heading{
+    font-size: 65px;  
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+/* banner ends  */
+
+/* Gamer styles starts */
+.gamer{
+    display: flex;
+    align-items: center;
+    margin-left: 120px;
+}
+.gamer-details{
+    text-align: right;
+}
+.gamer-details h2{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.gamer-img img{
+    width: 80%;
+}
+/* Gamer styles end */
+   
+/* Online games styles starts here */
+.online-games-heading{
+    text-align: center;
+}
+.online-games-heading h2{
+    font-size: 40px;
+    font-weight: 700;
+   }
+   .boxes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-left: 100px;
+   }
+   .box{
+    width: 300px;
+    height: 300px;
+    border-radius: 16px;
+    text-align: center;
+   }
+   .box img{
+    width: 100%;
+   }
+
+/* Online games styles ends here */
+
+/* Media query for mobile devices */
+@media screen and (max-width: 576px) {
+   nav, nav ul, .gamer{
+    flex-direction: column;
+    gap: 10px;
+   }
+   .gamer{
+    width: 100%;
+    margin-left: 20px;
+   }
+   .boxes{
+    grid-template-columns: 1fr;
+    margin-left: 30px;
+   }
+   .box{
+    width: 90%;
+    margin-bottom: 20px;
+   }
+   .box img{
+    width: 70%;
+   }
+   .gamer-details{
+    text-align: center;
+   }
+   .banner{
+    flex-direction: column-reverse;
+    margin-left: 30px;
+    gap: 10px;
+   }
+}
+
+/* Media query for Tablet devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav, nav ul, .banner, .gamer{
+        flex-direction: column;
+        gap: 10px;
+       }
+    .gamer{
+        width: 100%;
+        margin-left: 20px;
+       }
+    .gamer-img img{
+        width: 100%;
+    }
+    .gamer-details{
+        text-align: center;
+       }
+    .banner{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .boxes{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 30px;
+       }
+       .box{
+        width: 90%;
+        margin-bottom: 20px;
+       }
+       .box img{
+        width: 70%;
+       }
+}
