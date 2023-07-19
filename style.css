@@ -16,7 +16,10 @@ font-family: 'Work Sans', sans-serif;
 .follow{
     border-radius: 8px;
     background-color: rgba(11, 2, 35, 0.10);
-    padding: 10px 15px;
+    padding: 15px 10px;
+    height: 20px;
+    display: flex;
+    align-items: center;
 }
 .bottom{
     margin-bottom: 14px;
@@ -148,6 +151,16 @@ main{
     border-radius: 16px;
     text-align: center;
    }
+   .box-different{
+    position: relative;
+    background: rgba(0, 0, 0, 0.06);
+    border: 2px solid palevioletred;
+    opacity: 0.5;
+    transition: 0.6s;
+   }
+   .box-different:hover{
+    opacity: 1;
+   }
    .box img{
     width: 100%;
    }
@@ -203,6 +216,10 @@ main{
     align-items: center;
     justify-content: space-evenly;
 }
+.catagory:hover{
+    color: palevioletred;
+    border: 2px solid palevioletred;
+}
 .catagory h5{
     font-size: 20px;
     font-weight: 500;
@@ -214,7 +231,7 @@ main{
 .footer{
     background-color: black;
     color: white;
-    padding: 120px 400px;
+    padding: 80px 400px;
     justify-content: center;
     align-items: center;
 }
@@ -292,7 +309,7 @@ small span{
    }
    .footer{
     padding: 20px 50px;
-    width: 100%;
+    width: 90%;
    }
 }
 
@@ -346,7 +363,7 @@ small span{
         margin-left: 10px;
        }
        .footer{
-        padding: 20px 50px;
+        padding: 20px 80px;
         width: 100%;
        }
 }
