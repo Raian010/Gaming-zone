@@ -10,6 +10,9 @@ font-family: 'Work Sans', sans-serif;
 .pink{
     color: #FF42A5;
 }
+.tops{
+    margin-top: 5px;
+}
 .right{
     margin-right: 5px;
 }
@@ -17,9 +20,10 @@ font-family: 'Work Sans', sans-serif;
     border-radius: 8px;
     background-color: rgba(11, 2, 35, 0.10);
     padding: 15px 10px;
-    height: 20px;
+    height: 30px;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 .bottom{
     margin-bottom: 14px;
@@ -80,6 +84,11 @@ nav ul a{
 nav li{
     list-style: none;
     margin-right: 32px;
+}
+.follow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Nav styles ends here */
@@ -235,8 +244,13 @@ main{
     justify-content: center;
     align-items: center;
 }
+.fa-brands{
+    font-size: 30px;
+
+}
 .footer p{
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 .right{
     margin-right: 30px;
@@ -311,6 +325,9 @@ small span{
     padding: 20px 50px;
     width: 90%;
    }
+   .fa-brands {
+    font-size: 25px;
+}
 }
 
 /* Media query for Tablet devices */
@@ -366,4 +383,5 @@ small span{
         padding: 20px 80px;
         width: 100%;
        }
+       
 }
