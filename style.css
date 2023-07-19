@@ -154,10 +154,102 @@ main{
 
 /* Online games styles ends here */
 
+/* play games styles starts here */
+
+.play-games{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.play-details{
+    text-align: end;
+}
+.play-details h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+.play-img{
+    position: relative;
+}
+.play{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 400px;
+    left: -100px;
+}
+.play img{
+    width: 100%;
+}
+
+/* play games styles ends here */
+
+/* Catagories styles starts here */
+.catagories{
+   margin-top: 150px;
+   margin-left: 50px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+}
+.catagory{
+    width: 270px;
+    height: 80px;
+    border-radius: 50px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.catagory h5{
+    font-size: 20px;
+    font-weight: 500;
+}
+/* Catagories styles ends here */
+
+/* footer styles starts here */
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 120px 400px;
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    margin-top: 50px;
+}
+.right{
+    margin-right: 30px;
+}
+.big{
+    width: 40px;
+    height: 40px;
+}
+.fa-youtube{
+    width: 40px;
+    height: 40px;
+}
+small{
+    display: flex;
+    flex-wrap: wrap;
+}
+small span{
+    margin-bottom: 30px;
+}
+/* footer styles ends here */
+
 /* Media query for mobile devices */
 @media screen and (max-width: 576px) {
-   nav, nav ul, .gamer{
+   nav, nav ul, .gamer, .play-games{
     flex-direction: column;
+    gap: 10px;
+   }
+   .banner{
+    flex-direction: column-reverse;
+    margin-left: 30px;
     gap: 10px;
    }
    .gamer{
@@ -178,16 +270,35 @@ main{
    .gamer-details{
     text-align: center;
    }
-   .banner{
-    flex-direction: column-reverse;
-    margin-left: 30px;
-    gap: 10px;
+   .play-img{
+    width: 100%;
+    margin-left: 230px;
+    margin-top: 30px;
+   }
+   .play-img img{
+    width: 70%;
+   }
+   .play{
+    top: 240px;
+    width: 70%;
+   }
+   .catagories{
+    margin-left: 10px;
+    padding: 55px;
+   
+   }
+   .catagory{
+    width: 150px;
+   }
+   .footer{
+    padding: 20px 50px;
+    width: 100%;
    }
 }
 
 /* Media query for Tablet devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    nav, nav ul, .banner, .gamer{
+    nav, nav ul, .banner, .gamer, .play-games{
         flex-direction: column;
         gap: 10px;
        }
@@ -218,5 +329,24 @@ main{
        }
        .box img{
         width: 70%;
+       }
+       .play-img{
+        width: 100%;
+        margin-left: 230px;
+        margin-top: 30px;
+       }
+       .play-img img{
+        width: 80%;
+       }
+       .play{
+        top: 320px;
+        width: 50%;
+       }
+       .catagories{
+        margin-left: 10px;
+       }
+       .footer{
+        padding: 20px 50px;
+        width: 100%;
        }
 }
